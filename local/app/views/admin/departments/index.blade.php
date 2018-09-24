@@ -11,7 +11,7 @@
 
 @section('mainarea')
 
-			
+
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
 			{{$pageTitle}}
@@ -30,7 +30,7 @@
                     </li>
 
 				</ul>
-			
+
 			</div>
 			<!-- END PAGE HEADER-->
 
@@ -108,13 +108,13 @@
 							</tr>
 				@endforeach
 				@endif
-					
+
 							</tbody>
 							</table>
 						</div>
 					</div>
 					<!-- END EXAMPLE TABLE PORTLET-->
-					
+
 				</div>
 			</div>
 			<!-- END PAGE CONTENT-->
@@ -346,4 +346,3 @@
 			}
 </script>
 @stop
-	

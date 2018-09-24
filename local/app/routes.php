@@ -48,7 +48,7 @@ Route::group(array('prefix' => 'admin','before' => 'auth.admin|lock'), function(
     Route::resource('dashboard', 'AdminDashboardController',['as' => 'admin']);
 
     //    Employees Routing
-	Route::get('employees/export',['as'=>'admin.employees.export','uses'=>'EmployeesController@export']);
+	  Route::get('employees/export',['as'=>'admin.employees.export','uses'=>'EmployeesController@export']);
     Route::get('employees/employeeLogin/{id}',['as'=>'admin.employees.employeeLogin','uses'=>'EmployeesController@employeesLogin']);
     Route::resource('employees', 'EmployeesController',['except' => ['show'],'as' => 'admin']);
 
@@ -68,6 +68,7 @@ Route::group(array('prefix' => 'admin','before' => 'auth.admin|lock'), function(
     //    Holiday Routing
     Route::get('holidays/mark_sunday', 'HolidaysController@Sunday');
     Route::resource('holidays', 'HolidaysController',['as' => 'admin']);
+    Route::resource('holidays', 'HolidaysController',['except'=>['create','store','edit'],'as' => 'admin']);
 
     //  Routing for the attendance
     Route::get('attendances/report/{attendances}', ['as'=>'admin.attendance.report','uses'=>'AttendancesController@report']);

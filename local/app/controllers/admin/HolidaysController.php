@@ -73,7 +73,7 @@ class HolidaysController extends \AdminBaseController {
                 'date' => date('Y-m-d',strtotime( $index)),
 
             ]);
-	       
+
 	        $holi = Holiday::find($add->id);
 	        $holi->occassion = $value;
 	        $holi->save();
@@ -100,8 +100,7 @@ class HolidaysController extends \AdminBaseController {
 	public function edit($id)
 	{
 		$holiday = Holiday::find($id);
-
-		return View::make('admin.holidays.edit', compact('holiday'));
+		//return View::make('admin.holidays.edit', compact('holiday'));
 	}
 
 	/**
