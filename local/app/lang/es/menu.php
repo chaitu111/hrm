@@ -25,6 +25,7 @@ return [
 	'holiday'               =>  'Dias festivos',
 	'holidayList'           =>  'Lista de vacaciones',
 	'attendance'            =>  'Lista De Asistencia',
+	'payroll'               =>  'Payroll',
 	'markAttendance'        =>  'Marcos de Asistencia',
 	'viewAttendance'        =>  'Ver Asistencia',
 	'leaveTypes'            =>  'Deja Tipos',

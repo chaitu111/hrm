@@ -25,6 +25,7 @@ return [
 	'holiday'               =>  'Holidays',
 	'holidayList'           =>  'Holiday List',
 	'attendance'            =>  'Attendance',
+	'payroll'               =>  'Payroll',
 	'markAttendance'        =>  'Mark Attendance',
 	'viewAttendance'        =>  'View Attendance',
 	'leaveTypes'            =>  'Leave Types',

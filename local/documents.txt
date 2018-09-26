@@ -1,0 +1,13 @@
+After Creating a new controller you need to 
+run : composer dump-autoload 
+in side source/local
+
+or
+
+php artisan clear-compiled 
+composer dump-autoload
+php artisan optimize
+
+
+
+DataTable Customization -> assets/admin/pages/scripts/table-managed.js
